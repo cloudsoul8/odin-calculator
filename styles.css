@@ -1,0 +1,53 @@
+* {
+    font-family: Arial;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.button, .button-long, .button-hlong, #output-container {
+    box-shadow:0px 0px 0px 1px black inset;
+}
+
+.button {
+    width: 120px;
+    height: 120px;
+}
+
+.button-long {
+    width: 120px;
+    height: 240px;
+}
+
+.button-hlong {
+    width: 240px;
+    height: 120px;
+}
+
+#output-container {
+    height: 120px;
+    margin-bottom: 64px;
+}
+
+#calc-main {
+    width: min-content;
+}
+
+#calc-top {
+    display: flex;
+}
+
+#calc-middle {
+    display: flex;
+    
+}
+
+#calc-digits {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+}
+
