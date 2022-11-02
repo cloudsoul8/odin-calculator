@@ -66,8 +66,8 @@ function addDigitButtonFunc(e) {
     else {
         outputContainer.textContent += e.target.id; 
     }
-        
 }
+
 
 function addOperationButtonFunc(e) {
     onOperationButtonPress(e)
@@ -91,7 +91,6 @@ function onResultButtonPress(e) {
     updateResult()
     firstOperation = true;
     newNumberInput = true;
-    previousVal = 0;
 }
 
 function updateResult() {
@@ -112,6 +111,7 @@ const clearButton = document.querySelector('#clear-button')
 clearButton.addEventListener('click', e => {
     firstOperation = true
     outputContainer.textContent = ""
+    previousVal = 0;
 })
 
 const operationButtons = document.querySelectorAll('.operation')

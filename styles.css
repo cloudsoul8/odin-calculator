@@ -5,26 +5,57 @@
 
 body {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    background-color: lemonchiffon;
+
+    padding:0;
+    margin: 0;
 }
 
-.button, .button-long, .button-hlong, #output-container {
-    box-shadow:0px 0px 0px 1px black inset;
+header {
+    width: 100%;
+    padding: 64px;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#output-container {
+    box-shadow:0px 0px 0px 1px gray inset;
+    background-color: gray;
+    border-radius: 16px;
+
+    padding-left: 32px;
+
+    font-size: 64px;
 }
 
 .button {
     width: 120px;
     height: 120px;
+    background-image: url("imgs/keycap.png");
+    background-size: contain;
+    
 }
 
 .button-long {
     width: 120px;
     height: 240px;
+    background-image: url("imgs/keycap-vlong.png");
+    background-size: contain;
 }
 
 .button-hlong {
     width: 240px;
     height: 120px;
+    background-image: url("imgs/keycap-hlong.png");
+    background-size: contain;
 }
 
 #output-container {
@@ -34,6 +65,12 @@ body {
 
 #calc-main {
     width: min-content;
+    padding: 64px;
+    border-radius: 32px;
+    border: none;
+    background-color: #000208;
+
+    box-shadow: 9px 9px 0px rgb(222,222,240,1);
 }
 
 #calc-top {
@@ -49,5 +86,40 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: auto;
+}
+
+.button, .button-hlong, .button-long {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+span {
+    padding: 0;
+    margin: 16px 24px;
+}
+
+.my-footer {
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    margin-top: 64px;
+    height: 26px;
+    width: 100%;
+    padding: 8px;
+}
+
+.github-logo {
+    height: 100%;
+}
+
+.github-link {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:white
 }
 
